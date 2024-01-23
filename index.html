@@ -12,9 +12,7 @@
       theme: {
         extend: {
           colors: {
-            clifford: '#da373d',
-            'button': '#FF4240',
-            'bike-btn-bg': '#E76F511A',
+            clifford: '#da373d',           
           }
         }
       }
@@ -28,10 +26,18 @@
         color: rgba(19, 19, 24, 0.60);
         font-family: 'manrope',sans-serif;
         line-height: 26px;
+        padding: 16px;
     }
+    .button{
+        color: #FFF;
+        background-color: #FF4240;
+        border-radius: 8px;
+    }
+
   </style>
 </head>
 <body class="manrope">
+    <!-- navbar -->
         <header class="md:container md:mx-auto lg:max-w-[1170px]">
              <nav>
                 <div class="navbar bg-base-100">
@@ -61,7 +67,7 @@
                     </div>
                     <div class="gap-6">
                       <i class="fa-solid fa-magnifying-glass lg:pl-[250px] hidden lg:flex"></i> 
-                      <a class="btn bg-button py-4 px-6">Login</a>
+                      <a class="button py-4 px-6">Login</a>
                     </div>
                   </div>
              </nav>
@@ -97,9 +103,11 @@
         <main>
             <!-- Professional Hockeys Club section -->
             <section>
-               <div class="text-center space-y-3 mt-5 mb-5 lg:mb-10">
-                <h3 class="font-extrabold text-3xl">Professional Hockeys Club</h3>
-               <p class="p text-base font-medium">Welcome to the epitome of hockey sophistication - the Professional Hockey's Club, where passion meets prestige. This exclusive club is designed for true aficionados of the game, offering an unparalleled experience that goes beyond the ordinary.</p>
+               <div class="divide-y divide-dashed">
+                <div class="text-center space-y-3 mt-5 mb-5 lg:mb-10">
+                    <h3 class="font-extrabold text-3xl">Professional Hockeys Club</h3>
+                   <p class="p text-base font-medium">Welcome to the epitome of hockey sophistication - the Professional Hockey's Club, where passion meets prestige. This exclusive club is designed for true aficionados of the game, offering an unparalleled experience that goes beyond the ordinary.</p>
+                   </div>
                </div>
                <div>
                 <div class="items-center justify-between flex flex-col lg:flex-row">
@@ -133,25 +141,50 @@
                     </div>
                  </div>
                 </div>
-                <div class="flex justify-around hidden">
-                    <div class="text-center">
-                        <h4 class="text-xl font-medium">Prayer Facility</h4>
-                    <p class="p text-base font-base">Find tranquility amidst the <br> intensity of hockey training.</p>
-                </div>
-                       <div class="text-center">
-                        <h4 class="text-xl font-medium">Experienced Coach</h4>
-                    <p class="p text-base font-base">Guided by a seasoned coach,<br> unlock your full potential.</p>
-                </div>
-                       <div class="text-center">
-                        <h4 class="text-xl font-medium">Senior Player</h4>
-                    <p class="p text-base font-base">Learn from the best with <br> mentorship from seasoned <br> senior players.</p>
-                </div>
-                       <div class="text-center">
-                        <h4 class="text-xl font-medium">Training Ground</h4>
-                    <p class="p text-base font-base">Step onto our cutting-edge <br> Training Ground, meticulously <br> designed for excellence.</p>
-                </div>
+            </section>
+            <!-- program section -->
+            <section>
+                <hr class="mt-10 lg:mt-20">
+                    <div class=" text-center space-y-3 mt-5 mb-5 lg:mb-10 ">
+                        <h3 class="font-extrabold text-3xl">Program Sections</h3>
+                       <p class="p text-base font-medium">Welcome to a dynamic spectrum of programs designed to meet your hockey aspirations at every stage. Our Program Sections cater to players of all ages and skill levels, ensuring a personalized and progressive path to success.</p>
+                       </div>
+                       <hr class="mb-10 lg:mb-20">
                    </div>
-               </div>
+                <div class="flex flex-col justify-center items-center gap-6 lg:flex-row m-4 ">
+                    <div class="hero w-[335px] lg:w-[573px] rounded-2xl" style="background-image: url(Images/2.png)">
+                        <div class="hero-overlay bg-opacity-60 rounded-2xl"></div>
+                        <div class="hero-content text-left">
+                          <div class="p-5 lg:p-10">
+                            <h1 class="mb-5 text-white text-2xl font-extrabold">Junior Program</h1>
+                            <p class="mb-5 p text-white text-sm lg:text-base font-medium">Our Junior Program is the ideal starting point for young aspiring athletes. Tailored for children entering the exciting world of hockey, this program focuses on building fundamental skills, instilling a love for the game, and fostering teamwork.</p>
+                            <button class="button py-[10px] px-[22px]">Register Now!</button>
+                          </div>
+                        </div>
+                      </div>
+                    <div class="hero w-[335px] lg:w-[573px] rounded-2xl" style="background-image: url(Images/3.png)">
+                        <div class="hero-overlay bg-opacity-70 rounded-2xl"></div>
+                        <div class="hero-content text-left">
+                          <div class="p-5 lg:p-10">
+                            <h1 class="mb-5 text-white text-2xl font-extrabold">Teenager Program</h1>
+                            <p class="mb-5 p text-white text-sm lg:text-base font-medium">The Teenager Program is designed to cater to the specific needs and ambitions of young athletes navigating the challenges of adolescence. Geared towards skill refinement, tactical understanding, and physical development.</p>
+                            <button class="button py-[10px] px-[22px]">Register Now!</button>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="flex justify-center items-center">
+                    <div class="hero w-[335px] lg:w-[1150px] rounded-2xl" style="background-image: url(Images/4.png)">
+                        <div class="hero-overlay bg-opacity-60 rounded-2xl"></div>
+                        <div class="hero-content text-left">
+                          <div class="p-5 lg:pl-10 lg:pt-40 lg:pr-80">
+                            <h1 class="mb-5 text-white text-2xl font-extrabold">Professional Program</h1>
+                            <p class="mb-5 p text-white text-sm lg:text-base font-medium">For those aspiring to reach the pinnacle of hockey excellence, our Professional Program is the ultimate training ground. Tailored for seasoned players looking to elevate their game to a professional level, this program combines advanced skill development.</p>
+                            <button class="button py-[10px] px-[22px]">Register Now!</button>
+                          </div>
+                        </div>
+                      </div>
+                </div>
             </section>
         </main>    
 </body>
