@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Assignment-3</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
 <script src="https://kit.fontawesome.com/9d58a9c54c.js" crossorigin="anonymous"></script>
@@ -50,10 +50,39 @@
                       </ul>
                     </div>
                     <div class="gap-6">
-                      <i class="fa-solid fa-magnifying-glass lg:pl-[250px]"></i> 
+                      <i class="fa-solid fa-magnifying-glass lg:pl-[250px] hidden lg:flex"></i> 
                       <a class="btn bg-button py-4 px-6">Login</a>
                     </div>
                   </div>
              </nav>
+             <!-- Slider -->
+         <div class="carousel">
+            <div id="slide1" class="carousel-item relative w-full">
+              <div class="flex flex-col lg:flex-row lg:p-24">
+                <div class="space-y-1 lg:space-y-4 flex-1">
+                </div>
+                <div>
+                  <img src="Images/1.png"/>
+                </div>
+              </div>
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2" class="btn btn-circle">❮</a> 
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide2" class="carousel-item relative w-full">
+              <div class="flex flex-col lg:flex-row lg:p-24">
+                <div class="space-y-1 lg:space-y-4 flex-1">
+                </div>
+                <div>
+                  <img class="rounded-2xl" src="Images/image 23.png"/>
+                </div>
+              </div>
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2" class="btn btn-circle">❮</a> 
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+              </div>
+            </div> 
 </body>
 </html>
